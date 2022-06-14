@@ -41,8 +41,7 @@ function fazerPergunta() {
   const totalRespostas = respostas.length - 1
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
-  elementoResposta.innerHTML =
-    pergunta + '<br/><br/>' + respostas[numeroAleatorio]
+  elementoResposta.innerHTML = respostas[numeroAleatorio]
 
   // sumir a resposta depois de 5 segundos
   setTimeout(function () {
